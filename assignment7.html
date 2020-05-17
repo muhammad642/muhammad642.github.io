@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Galerry</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <style>
+    body{
+      margin: 0;
+      padding: 15px 80px;
+      height: 100px;
+    }
+    /* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #008000;
+  font-family: Arial;
+  text-align: center;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: right;
+  padding: 15px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px ;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 35%;
+  margin-left: 200px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/*---------*/
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+.padding{
+  padding: 5em !important;
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <h1>All Products</h1>
+    <a href="#home">Size</a>
+    <a href="#news">Meterial</a>
+    <a href="#home">Gender</a>
+    <a href="#news">Color</a>
+    <a href="#home">Category</a>
+    <a href="#news">Brand</a>
+    <div class="dropdown">
+      <button class="dropbtn">Type
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="image">
+  <div class="row">
+    <div class="column">
+      <img src="t1.jpg" alt="Snow" style="width:50%; height: 25%;">
+      <h3 style="margin-left: 30px;">T-SHIRT FOR BOYS</h3>
+      <p style="margin-left: 100px;">clothing</p>
+      <p class="price" style="margin-left: 100px; color: grey; font-size: 22px;">$34.99</p>
+    </div>
+    <div class="row">
+      <div class="column">
+        <img src="t2.jpg" alt="Snow" style="width:50%; height: 25%;">
+        <h3 style="margin-left: 30px;">HODDIE FOR BOYS</h3>
+        <p style="margin-left: 100px;">clothing</p>
+        <p class="price" style="margin-left: 100px; color: grey; font-size: 22px;">$74.99</p>
+      </div>
+    </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <!-----11111111111-->
+  <div class="card">
+    <img src="t2.jpg" alt="#" style="width:100%">
+    <h1>HODDIE FOR BOYS</h1>
+    <p class="price">$74.99</p>
+    <p>If your shopping over $50, get free shipping</p>
+    <p>Buy one, get one 15% off.</p>
+    <p><button>Add to Cart</button></p>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+</body>
+</html>
